@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: http://localhost:3000/courses
+  url: http://localhost:3000/reviews
   body: json
   auth: none
 }
@@ -15,11 +15,12 @@ headers {
 }
 
 body:json {
-  {
-    "title" : "WEBSOCKETS EN py",
-    "wees" : 5,
-    "tuition" : 450000.90,
-    "minimumSkill" :"Beginner",
-    "createAt" : "2022-02-02"
-  }
+  [
+    {
+      "id": 3,
+      "title": "BB",
+      "comment": "BBBB",
+      "rating": 1
+    }
+  ]
 }
