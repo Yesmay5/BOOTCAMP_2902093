@@ -1,0 +1,26 @@
+meta {
+  name: crear_bootcamp
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/users
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name" : "JS AVANZADO",
+    "email" :"265334665",
+    "role" : "calle 56 16 27 SENA",
+    "pass" : "WEB, JS, PROGRAMACION ASINCRONA",
+    "averageRating" : 8.0,
+    "createdAt" : "2022-02-03"
+  }
+}

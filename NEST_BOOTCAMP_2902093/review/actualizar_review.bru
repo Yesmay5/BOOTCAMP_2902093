@@ -1,0 +1,17 @@
+meta {
+  name: actualizar_review
+  type: http
+  seq: 4
+}
+
+patch {
+  url: http://localhost:3000/reviews/3
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "CC"
+  }
+}

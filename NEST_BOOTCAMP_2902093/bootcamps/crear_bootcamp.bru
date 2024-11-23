@@ -1,0 +1,26 @@
+meta {
+  name: crear_bootcamp
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/bootcamps
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name" : "qr",
+    "phone" :"3174293099",
+    "adress" : "Calle 43",
+    "topics" : "WEB, a, PROGRAMACION ASINCRONA",
+    "averageRating" : 2,
+    "createAt" : "2024-02-03"
+  }
+}

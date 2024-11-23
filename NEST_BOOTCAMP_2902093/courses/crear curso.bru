@@ -1,0 +1,28 @@
+meta {
+  name: crear curso
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/courses
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+    {
+      "id": 1,
+      "title": "Curosddsd",
+      "weeks": 4,
+      "tuition": "10",
+      "description": "sjsjsjsj",
+      "minimumSkill": 1,
+      "createdAt": "2022-02-02",
+      "bootcampId" : 3
+    }
+}

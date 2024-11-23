@@ -1,0 +1,17 @@
+meta {
+  name: actualizar_courses
+  type: http
+  seq: 4
+}
+
+patch {
+  url: http://localhost:3000/courses/5
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "JS a"
+  }
+}
